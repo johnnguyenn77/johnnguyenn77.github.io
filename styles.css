@@ -174,6 +174,7 @@ a:focus-visible {
 
 .side-footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
   margin-top: auto;
@@ -181,8 +182,39 @@ a:focus-visible {
   color: #8fa5c6;
 }
 
-.side-footer a {
+.social-links {
+  display: flex;
+  gap: 7px;
+}
+
+.social-link {
+  display: inline-grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
   color: var(--cream);
+  font-size: 0.58rem;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  background: rgba(120, 168, 255, 0.12);
+  color: var(--accent-light);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus-visible .social-icon {
+  opacity: 1;
 }
 
 .main-content {
@@ -263,8 +295,7 @@ h2 {
 }
 
 .work-list,
-.experience-list,
-.publication-list {
+.experience-list {
   border-top: 1px solid var(--line);
 }
 
@@ -458,39 +489,6 @@ h2 {
   margin-bottom: 0;
 }
 
-.publication {
-  display: grid;
-  grid-template-columns: 90px minmax(0, 1fr) 88px;
-  gap: 18px;
-  align-items: baseline;
-  padding: 22px 0;
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.publication > span:first-child,
-.publication > span:last-child {
-  color: #8a9ab5;
-  font-family: var(--mono);
-  font-size: 0.66rem;
-  text-transform: uppercase;
-}
-
-.publication > span:last-child {
-  text-align: right;
-}
-
-a.publication:hover,
-a.publication:focus-visible {
-  color: var(--accent);
-}
-
-a.publication:hover > span:last-child,
-a.publication:focus-visible > span:last-child {
-  color: var(--accent);
-}
-
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -655,15 +653,6 @@ a.publication:focus-visible > span:last-child {
 
   .experience-date {
     padding-top: 0;
-  }
-
-  .publication {
-    grid-template-columns: 76px minmax(0, 1fr);
-    gap: 12px;
-  }
-
-  .publication > span:last-child {
-    display: none;
   }
 
   .skills-grid {
