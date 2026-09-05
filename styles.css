@@ -52,15 +52,18 @@ a:focus-visible {
 }
 
 .sidebar {
+  align-self: start;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
   color: var(--cream);
   background: var(--navy);
 }
 
 .sidebar-inner {
-  position: sticky;
-  top: 0;
   display: flex;
-  min-height: 100vh;
+  min-height: 100%;
   flex-direction: column;
   padding: 38px 32px 30px;
 }
@@ -569,13 +572,107 @@ h2 {
   color: var(--accent);
 }
 
+@media (min-width: 851px) {
+  .sidebar-inner {
+    padding: 30px 32px 19px;
+  }
+
+  .side-label {
+    margin-bottom: 18px;
+  }
+
+  .name {
+    font-size: clamp(2rem, 3.5vw, 2.55rem);
+  }
+
+  .side-intro {
+    margin-top: 18px;
+    line-height: 1.55;
+  }
+
+  .side-rule {
+    margin: 27px 0 20px;
+  }
+
+  .side-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 18px;
+  }
+
+  .side-details div:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .side-details dt,
+  .side-details dd {
+    line-height: 1.4;
+  }
+
+  .side-nav {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    margin-top: 28px;
+  }
+
+  .side-footer {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 851px) and (max-height: 680px) {
+  .sidebar-inner {
+    padding: 26px 32px 18px;
+  }
+
+  .side-label {
+    margin-bottom: 16px;
+  }
+
+  .name {
+    font-size: clamp(1.9rem, 3vw, 2.35rem);
+  }
+
+  .side-intro {
+    margin-top: 15px;
+    line-height: 1.45;
+  }
+
+  .side-rule {
+    margin: 23px 0 18px;
+  }
+
+  .side-details {
+    gap: 12px 16px;
+  }
+
+  .side-details dt,
+  .side-details dd {
+    line-height: 1.25;
+  }
+
+  .side-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 12px;
+    margin-top: 24px;
+  }
+
+  .side-footer {
+    padding-top: 18px;
+  }
+}
+
 @media (max-width: 850px) {
   .page {
     display: block;
   }
 
-  .sidebar-inner {
+  .sidebar {
     position: static;
+    height: auto;
+    overflow: visible;
+  }
+
+  .sidebar-inner {
     min-height: auto;
     padding: 30px 28px 28px;
   }
