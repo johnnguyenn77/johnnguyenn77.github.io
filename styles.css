@@ -223,6 +223,7 @@ a:focus-visible {
 .main-content {
   width: 100%;
   max-width: 1080px;
+  margin-inline: auto;
   padding: 0 clamp(28px, 8vw, 110px) 0 clamp(28px, 7vw, 96px);
 }
 
