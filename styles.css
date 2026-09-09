@@ -47,7 +47,7 @@ a:focus-visible {
 
 .page {
   display: grid;
-  grid-template-columns: minmax(240px, 285px) minmax(0, 1fr);
+  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
   min-height: 100vh;
 }
 
