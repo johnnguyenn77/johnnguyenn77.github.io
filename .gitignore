@@ -1,3 +1,6 @@
 .idea/
 .DS_Store
 Thumbs.db
+.jekyll-cache/
+.jekyll-metadata
+_site/

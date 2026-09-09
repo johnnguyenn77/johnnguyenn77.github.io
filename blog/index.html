@@ -1,0 +1,64 @@
+---
+layout: default
+title: Blog
+description: My personal blog about video games, movies, television, and whatever else I find worth writing about.
+permalink: /blog/
+---
+
+<section class="publication-section recent-publications" aria-labelledby="recent-posts-title">
+  <div class="section-heading">
+    <h1 id="recent-posts-title">Recent posts</h1>
+  </div>
+  <p class="section-intro">The latest things I’ve played, watched, and decided to have an opinion about.</p>
+
+  {% if site.posts.size > 0 %}
+    <div class="publication-grid">
+      {% for post in site.posts limit: 5 %}
+        <article class="publication-card">
+          <div class="publication-card-topline">
+            <span>{{ post.media_type | default: "Post" }}</span>
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          </div>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }} <span aria-hidden="true">↗</span></a></h2>
+          {% if post.excerpt %}
+            <p>{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
+          {% endif %}
+          <div class="publication-card-bottomline">
+            {% if post.score %}<span class="card-score">{{ post.score }}<small>/10</small></span>{% endif %}
+            {% if post.tags %}<span class="card-tags">{{ post.tags | join: " · " }}</span>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="empty-state compact">
+      <p class="eyebrow">Archive empty</p>
+      <h2>No posts yet.</h2>
+      <p>The first post will appear here when I upload it.</p>
+    </div>
+  {% endif %}
+</section>
+
+<section class="browse-section" aria-labelledby="browse-title">
+  <div class="section-heading">
+    <h2 id="browse-title">Browse by medium</h2>
+  </div>
+
+  <div class="medium-grid">
+    <a class="medium-link" href="{{ '/blog/games/' | relative_url }}">
+      <span class="medium-number">01</span>
+      <span class="medium-copy"><strong>Games</strong><small>Games I’m playing.</small></span>
+      <span class="medium-arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="medium-link" href="{{ '/blog/movies/' | relative_url }}">
+      <span class="medium-number">02</span>
+      <span class="medium-copy"><strong>Movies</strong><small>Movies I’m watching.</small></span>
+      <span class="medium-arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="medium-link" href="{{ '/blog/tv/' | relative_url }}">
+      <span class="medium-number">03</span>
+      <span class="medium-copy"><strong>TV Shows</strong><small>TV shows I’m watching.</small></span>
+      <span class="medium-arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
+</section>

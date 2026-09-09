@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<section class="category-page" aria-labelledby="category-title">
+  <a class="back-link" href="{{ '/blog/' | relative_url }}">← Back to blog</a>
+
+  <div class="section-heading">
+    <h1 id="category-title">{{ page.title }}</h1>
+  </div>
+  <p class="section-intro">{{ page.description }}</p>
+
+  {% assign category_posts = site.posts | where: "media_type", page.media_type %}
+  {% if category_posts.size > 0 %}
+    <div class="publication-grid">
+      {% for post in category_posts %}
+        <article class="publication-card">
+          <div class="publication-card-topline">
+            <span>{{ post.media_type }}</span>
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          </div>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }} <span aria-hidden="true">↗</span></a></h2>
+          {% if post.excerpt %}
+            <p>{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
+          {% endif %}
+          <div class="publication-card-bottomline">
+            {% if post.score %}<span class="card-score">{{ post.score }}<small>/10</small></span>{% endif %}
+            {% if post.tags %}<span class="card-tags">{{ post.tags | join: " · " }}</span>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="empty-state compact">
+      <p class="eyebrow">Nothing here yet</p>
+      <h2>No {{ page.title | downcase }} posts yet.</h2>
+      <p>Check back when I add one to the archive.</p>
+    </div>
+  {% endif %}
+</section>
