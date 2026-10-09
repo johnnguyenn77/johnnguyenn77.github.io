@@ -34,7 +34,7 @@
             </div>
             <div>
               <dt>Contact</dt>
-              <dd><a href="mailto:nguyenhoangtu.427@gmail.com">nguyenhoangtu.427@gmail.com</a></dd>
+              <dd><a href="mailto:jn866@drexel.edu">jn866@drexel.edu</a></dd>
             </div>
             <div>
               <dt>Résumé</dt>
@@ -81,8 +81,8 @@
                 how systems work.
               </p>
               <p>
-                I currently split my time between the <a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> and Drexel IT. My work has included research tools,
-                simulations, visualization, and software used by university teams.
+                I work across research in the <a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a>, teaching, and software engineering at Drexel IT. My work includes research tools,
+                simulations, visualization, and production software used by university teams.
               </p>
             </div>
           </div>
@@ -157,13 +157,14 @@
               <div class="item-content">
                 <div class="item-heading">
                   <h3><a href="https://arxiv.org/abs/2606.22110v1" target="_blank" rel="noreferrer">TraceView: Interactive Visualization of Agentic Program Repair Trajectories <span aria-hidden="true">↗</span></a></h3>
-                  <p><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · arXiv preprint · Presented at ICSME 2026</p>
+                  <p><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · arXiv preprint · Presented at IEEE International Conference on Software Maintenance and Evolution (ICSME) 2026</p>
                 </div>
                 <p>
-                  I built an interactive tool for exploring agentic program repair trajectories. It supports annotation,
-                  graph views, filtering, metrics, and failure analysis.
+                  I owned end-to-end development of TraceView, building Python, Jupyter Notebook, and Streamlit tooling
+                  for trajectory annotation, graph-based visualization, filtering, metrics, and failure analysis. I also
+                  documented the system design and implementation for the paper’s methodology section.
                 </p>
-                <p class="item-tags">Python · Jupyter · Streamlit · Visualization</p>
+                <p class="item-tags">Python · Jupyter Notebook · Streamlit · Visualization</p>
                 <p class="item-links">
                   <a href="https://github.com/SOAR-Lab/agent-traj-visualization" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
                   <a href="https://youtu.be/9ZCh7Ifj2AQ" target="_blank" rel="noreferrer">Demo <span aria-hidden="true">↗</span></a>
@@ -176,13 +177,14 @@
               <div class="item-content">
                 <div class="item-heading">
                   <h3><a href="https://doi.org/10.1109/JCDL67857.2025.00033" target="_blank" rel="noreferrer">Linking Policies for the Permanent Web <span aria-hidden="true">↗</span></a></h3>
-                  <p>Drexel research · JCDL 2025</p>
+                  <p>Drexel research · ACM/IEEE Joint Conference on Digital Libraries 2025</p>
                 </div>
                 <p>
-                  I built a simulation and benchmarking framework for decentralized linking strategies in IPFS/IPNS,
-                  then used it to compare thousands of simulated versions.
+                  I built a simulation framework for InterPlanetary Archival Record Objects (IPAROs) in IPFS/IPNS and
+                  benchmarked 11 decentralized linking strategies. Data pipelines compared storage efficiency, retrieval
+                  time, and scalability across thousands of simulated versions; I presented the findings at JCDL 2025.
                 </p>
-                <p class="item-tags">Python · NumPy · Pandas · Matplotlib · IPFS / IPNS</p>
+                <p class="item-tags">Python · Bash · NumPy · Pandas · Matplotlib · IPFS / IPNS</p>
               </div>
             </article>
 
@@ -191,13 +193,46 @@
               <div class="item-content">
                 <div class="item-heading">
                   <h3><a href="https://arxiv.org/abs/2602.14345" target="_blank" rel="noreferrer">AXE: Grey-Box Exploitability Confirmation for Localized Vulnerability Reports <span aria-hidden="true">↗</span></a></h3>
-                  <p><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · arXiv preprint</p>
+                  <p><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · Under review</p>
                 </div>
                 <p>
-                  I’ve contributed to a multi-agent framework for confirming whether localized vulnerability reports
-                  are exploitable using lightweight metadata and dynamic feedback.
+                  I contributed to a multi-agent exploit engine for validating zero-day vulnerability reports and
+                  analyzing exploitability. I co-authored the paper, which is under review, and am contributing to a
+                  fourth manuscript in preparation.
                 </p>
-                <p class="item-tags">Security · Multi-agent systems · Exploitability</p>
+                <p class="item-tags">Security · Multi-agent systems · Vulnerability validation</p>
+              </div>
+            </article>
+
+            <article class="work-item">
+              <div class="item-number">04</div>
+              <div class="item-content">
+                <div class="item-heading">
+                  <h3>Super Streaming: Low-latency Pub/Sub System</h3>
+                  <p>SSI Securities Corporation · Internship project · June–August 2024</p>
+                </div>
+                <p>
+                  I built a multithreaded, MQTT v5-inspired pub/sub system in Rust and Tokio for streaming stock data
+                  from two exchanges. It reached sub-millisecond end-to-end latency with 1,000 clients, under 30 ms
+                  with 10,000 clients, and throughput of up to 500,000 messages per second.
+                </p>
+                <p class="item-tags">Rust · Tokio · MQTT · Multithreading</p>
+              </div>
+            </article>
+
+            <article class="work-item">
+              <div class="item-number">05</div>
+              <div class="item-content">
+                <div class="item-heading">
+                  <h3>iAgent: AI-Driven Project Assistance Tool</h3>
+                  <p>SSI Securities Corporation · Internship project · April–June 2024</p>
+                </div>
+                <p>
+                  I built a full-stack application for AI-assisted project planning and document workflows, with a
+                  FastAPI backend, React frontend, PostgreSQL, and a PGVector store. Its RAG workflow uses OpenAI
+                  embeddings to generate project requirements, test cases, and market research outputs.
+                </p>
+                <p class="item-tags">FastAPI · SQLAlchemy · React · PostgreSQL · PGVector · TailwindCSS · OAuth 2.0</p>
               </div>
             </article>
           </div>
@@ -209,28 +244,41 @@
             <h2 id="experience-title">Experience</h2>
           </div>
 
-          <article class="experience-item">
+          <div class="experience-list">
+            <article class="experience-item">
               <div class="experience-date">Oct 2025 — Present</div>
               <div>
                 <h3>Undergraduate Research Assistant</h3>
-                <p class="experience-place"><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · Drexel College of Computing &amp; Informatics</p>
+                <p class="experience-place"><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · Drexel University, School of Computer and Information Sciences</p>
                 <p>
-                  I develop research tools for agentic program repair trajectories and contribute to studies in
+                  I develop research tools for agentic program repair trajectories and contribute to research on
                   vulnerability validation, visualization, and software engineering analytics.
                 </p>
               </div>
             </article>
 
-          <div class="experience-list">
             <article class="experience-item">
-              <div class="experience-date">Apr — Sep 2026<br /><span>Apr — Sep 2025</span></div>
+              <div class="experience-date">Sep 2026 — Present</div>
+              <div>
+                <h3>Course Assistant</h3>
+                <p class="experience-place">Drexel University, School of Computer and Information Sciences</p>
+                <p>
+                  I hold office hours and assist students during lab sessions for CS 281: Systems Architecture and
+                  SE 201: Introduction to Software Engineering and Development. I also grade assignments and provide
+                  feedback.
+                </p>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-date">Apr–Sep 2026<br /><span>Apr–Sep 2025</span></div>
               <div>
                 <h3>Junior Developer</h3>
                 <p class="experience-place">Drexel University IT · Core Enterprise Systems</p>
                 <p>
-                  I work on features and microservices for the DrexelOne portal using Java, Spring Boot, REST APIs,
-                  and Microsoft SQL Server. I also build faculty-facing interfaces with jQuery, Bootstrap, and
-                  Thymeleaf.
+                  I engineered features and microservices for the DrexelOne portal, integrating Microsoft SQL Server
+                  with Java, Spring Boot, and REST APIs. I also built responsive faculty-facing interfaces with jQuery,
+                  Bootstrap, and Thymeleaf.
                 </p>
               </div>
             </article>
@@ -239,10 +287,11 @@
               <div class="experience-date">Jul 2024 — Oct 2025</div>
               <div>
                 <h3>Undergraduate Research Assistant</h3>
-                <p class="experience-place">Drexel College of Computing &amp; Informatics</p>
+                <p class="experience-place">Drexel University, School of Computer and Information Sciences</p>
                 <p>
-                  I built simulation, benchmarking, and visualization pipelines for permanent web research using
-                  Python, Bash, NumPy, Pandas, and Matplotlib.
+                  I built simulation and visualization pipelines for InterPlanetary Archival Record Objects (IPAROs)
+                  in IPFS/IPNS, benchmarking 11 linking strategies and analyzing storage efficiency, retrieval time,
+                  and scalability. I presented the findings at the ACM/IEEE Joint Conference on Digital Libraries 2025.
                 </p>
               </div>
             </article>
@@ -253,8 +302,10 @@
                 <h3>Software Engineer Intern</h3>
                 <p class="experience-place">SSI Securities Corporation · Ho Chi Minh City, Vietnam</p>
                 <p>
-                  I developed internal generative AI tools and worked with cross-functional teams to diagnose issues
-                  and improve active software projects using Gitflow.
+                  During my internship, I built Super Streaming for stock-data distribution and iAgent for AI-assisted
+                  project and document workflows. I also developed generative AI tools to support customer care and
+                  streamline operations, and worked with cross-functional teams to resolve issues in active projects
+                  using Gitflow.
                 </p>
               </div>
             </article>
@@ -273,16 +324,20 @@
               <p>Python, Java, SQL, JavaScript, HTML, CSS, C, C++, Rust, Bash</p>
             </div>
             <div>
-              <h3>Frameworks</h3>
-              <p>Spring Boot, FastAPI, React, Node.js, Streamlit, LangChain, LangGraph, TailwindCSS</p>
+              <h3>Libraries</h3>
+              <p>NumPy, Pandas, Matplotlib, SQLAlchemy, jQuery, Bootstrap, Thymeleaf, Streamlit, FastAPI, React, Tokio</p>
             </div>
             <div>
-              <h3>Data &amp; infrastructure</h3>
-              <p>PostgreSQL, Microsoft SQL Server, SQLite, Redis, PGVector, Docker, REST APIs</p>
+              <h3>Frameworks &amp; runtimes</h3>
+              <p>Spring Boot, LangChain, LangGraph, Node.js, TailwindCSS, JUnit, OAuth 2.0</p>
             </div>
             <div>
-              <h3>Other</h3>
-              <p>System design, Agile methodologies, Gitflow, large language models, data visualization</p>
+              <h3>Databases</h3>
+              <p>Microsoft SQL Server, PostgreSQL, PGVector, SQLite, Redis</p>
+            </div>
+            <div>
+              <h3>Software development</h3>
+              <p>Agile methodologies, Git, Gitflow, large language models, system design, RESTful APIs, Docker</p>
             </div>
           </div>
         </section>

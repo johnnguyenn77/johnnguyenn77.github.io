@@ -36,7 +36,8 @@ a {
   text-decoration: none;
 }
 
-.soar-link {
+.soar-link:hover,
+.soar-link:focus-visible {
   text-decoration: underline;
   text-underline-offset: 0.16em;
 }
