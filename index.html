@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#0b1730" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#faf9f6" />
     <meta
       name="description"
-      content="Portfolio of Tu (John) Nguyen, an undergraduate research assistant at SOAR Lab and computer science student at Drexel University."
+      content="Portfolio of Tu (John) Nguyen, a Drexel computer science student and SOAR Lab undergraduate research assistant working on software security and AI-assisted vulnerability validation."
     />
     <title>John Nguyen</title>
     <link rel="stylesheet" href="styles.css" />
@@ -15,206 +15,96 @@
   </head>
   <body>
     <div class="page" id="top">
-      <aside class="sidebar">
-        <div class="sidebar-inner">
-          <p class="side-label">Portfolio</p>
-          <a class="name" href="#top">Tu (John)<br />Nguyen</a>
-          <p class="side-intro">Undergraduate Research Assistant at <a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">SOAR Lab</a>, Drexel University.</p>
-
-          <div class="side-rule"></div>
-
-          <dl class="side-details">
-            <div>
-              <dt>Based in</dt>
-              <dd>Philadelphia, PA</dd>
-            </div>
-            <div>
-              <dt>Graduating</dt>
-              <dd>June 2027</dd>
-            </div>
-            <div>
-              <dt>Contact</dt>
-              <dd><a href="mailto:jn866@drexel.edu">jn866@drexel.edu</a></dd>
-            </div>
-            <div>
-              <dt>Résumé</dt>
-              <dd><a href="assets/John-Tu-Nguyen-Resume.pdf" download>Download PDF</a></dd>
-            </div>
-          </dl>
-
-          <nav class="side-nav" aria-label="Section navigation">
-            <a href="#about">About</a>
-            <a href="blog/">Reviews blog <span aria-hidden="true">↗</span></a>
-            <a href="#interests">Research interests</a>
-            <a href="#education">Education</a>
-            <a href="#work">Selected work</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-          </nav>
-
-          <div class="side-footer">
-            <div class="social-links">
-              <a class="social-link" href="https://github.com/johnnguyenn77" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
-                <img class="social-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/github.svg" alt="" />
-              </a>
-              <a class="social-link" href="https://scholar.google.com/citations?user=0nQ8XMsAAAAJ&amp;hl=en" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar">
-                <img class="social-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/googlescholar.svg" alt="" />
-              </a>
-              <a class="social-link" href="https://orcid.org/0009-0001-7549-9323" target="_blank" rel="noreferrer" aria-label="ORCID" title="ORCID">
-                <img class="social-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/orcid.svg" alt="" />
-              </a>
-            </div>
-            <span>Updated 2026</span>
+      <header class="profile">
+        <div class="profile-text">
+          <div class="profile-identity">
+            <h1>Tu (John) Nguyen</h1>
+            <p class="role">Undergraduate Research Assistant · <a href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">SOAR Lab</a></p>
+          </div>
+          <p>I’m a computer science student at Drexel University and an undergraduate research assistant in the Software Engineering and Analytics Research Lab.</p>
+          <p>My research interests include software security, AI-assisted vulnerability analysis, and automated program repair.</p>
+          <div class="profile-links">
+            <a href="mailto:jn866@drexel.edu">jn866@drexel.edu</a>
+            <a href="assets/John-Tu-Nguyen-Resume.pdf" download>Résumé</a>
+            <a href="https://github.com/johnnguyenn77" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=0nQ8XMsAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="https://orcid.org/0009-0001-7549-9323" target="_blank" rel="noreferrer">ORCID</a>
           </div>
         </div>
-      </aside>
+        <div class="portrait">
+          <img src="assets/john-nguyen-portrait-retouched.webp" alt="Portrait of Tu (John) Nguyen" width="3024" height="4032" decoding="async" />
+        </div>
+      </header>
 
-      <main class="main-content">
-        <section class="intro section" id="about" aria-labelledby="intro-title">
-          <p class="section-label">About</p>
-          <div class="intro-grid">
-            <h1 id="intro-title">Hi, I’m John. I study computer science and build software.</h1>
-            <div class="intro-copy">
-              <p>
-                I’m a student at Drexel University, where I study computer science with minors in data science and
-                financial technology. I’m interested in software engineering, research, and the practical details of
-                how systems work.
-              </p>
-              <p>
-                I’m an undergraduate research assistant in the <a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> and a course assistant at Drexel. My work includes research tools,
-                simulations, visualization, and production software I built during my Drexel IT internship.
-              </p>
-            </div>
-            <div class="intro-portrait">
-              <img
-                src="assets/john-nguyen-portrait-retouched.webp"
-                alt="Portrait of Tu (John) Nguyen"
-                width="3024"
-                height="4032"
-                decoding="async"
-              />
-            </div>
+      <nav class="navigation" aria-label="Section navigation">
+        <a href="#research">Research</a>
+        <a href="#projects">Software projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="blog/" target="_blank" rel="noreferrer">Reviews blog</a>
+      </nav>
+
+      <main>
+        <section id="research" aria-labelledby="research-title">
+          <h2 id="research-title">Research</h2>
+          <div class="work-list">
+            <article class="work-item research-lead">
+              <div class="item-content">
+                <div class="item-heading">
+                  <h3>AXE: Grey-Box Exploitability Confirmation for Localized Vulnerability Reports</h3>
+                  <p>SOAR Lab · Under review</p>
+                </div>
+                <p>
+                  I helped build the multi-agent exploit engine and co-authored the paper. AXE investigates whether
+                  reported zero-day vulnerabilities can actually be exploited.
+                </p>
+                <p class="item-links">
+                  <a href="https://arxiv.org/abs/2602.14345" target="_blank" rel="noreferrer" aria-label="Read the AXE paper">Paper</a>
+                </p>
+              </div>
+            </article>
+<article class="work-item">
+              <div class="item-content">
+                <div class="item-heading">
+                  <h3>TraceView: Interactive Visualization of Agentic Program Repair Trajectories</h3>
+                  <p>SOAR Lab · arXiv preprint · Presented at IEEE ICSME 2026</p>
+                </div>
+                <p>
+                  I built TraceView to annotate and explore program repair agents’ trajectories, with graph views,
+                  filtering, metrics, and failure analysis. I also wrote the paper’s description of the system’s design and implementation.
+                </p>
+                <p class="item-links">
+                  <a href="https://arxiv.org/abs/2606.22110v1" target="_blank" rel="noreferrer" aria-label="Read the TraceView paper">Paper</a>
+                  <a href="https://github.com/SOAR-Lab/agent-traj-visualization" target="_blank" rel="noreferrer" aria-label="View the TraceView code">Code</a>
+                  <a href="https://youtu.be/9ZCh7Ifj2AQ" target="_blank" rel="noreferrer" aria-label="Watch the TraceView demo">Demo</a>
+                </p>
+              </div>
+            </article>
+<article class="work-item">
+              <div class="item-content">
+                <div class="item-heading">
+                  <h3>Linking Policies for the Permanent Web</h3>
+                  <p>ACM/IEEE JCDL 2025 · Drexel University · Supervised by <a class="soar-link" href="https://matkelly.com/" target="_blank" rel="noreferrer">Prof. Mat Kelly</a></p>
+                </div>
+                <p>
+                  I built an IPARO simulation framework in IPFS/IPNS and benchmarked 11 linking strategies across
+                  thousands of simulated versions. I compared storage efficiency, retrieval time, and scalability,
+                  and presented the results at JCDL 2025.
+                </p>
+                <p class="item-links">
+                  <a href="https://doi.org/10.1109/JCDL67857.2025.00033" target="_blank" rel="noreferrer" aria-label="Read the Linking Policies for the Permanent Web paper">Paper</a>
+                </p>
+              </div>
+            </article>
           </div>
+          <p class="research-note">I’m also working on a fourth manuscript.</p>
         </section>
 
-        <section class="section" id="interests" aria-labelledby="interests-title">
-          <div class="section-heading">
-            <p class="section-label">01</p>
-            <h2 id="interests-title">Research interests</h2>
-          </div>
-
-          <div class="interest-list">
-            <div class="interest-item">
-              <span>01</span>
-              <div>
-                <h3>Software engineering</h3>
-                <p>Tools and methods that help developers understand and maintain software.</p>
-              </div>
-            </div>
-            <div class="interest-item">
-              <span>02</span>
-              <div>
-                <h3>Program repair</h3>
-                <p>How automated repair agents reason, act, and recover when fixing bugs.</p>
-              </div>
-            </div>
-            <div class="interest-item">
-              <span>03</span>
-              <div>
-                <h3>AI-assisted development</h3>
-                <p>Building practical tools around large language models and software workflows.</p>
-              </div>
-            </div>
-            <div class="interest-item">
-              <span>04</span>
-              <div>
-                <h3>Software security</h3>
-                <p>Understanding vulnerability reports and improving how teams validate them.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="education" aria-labelledby="education-title">
-          <div class="section-heading">
-            <p class="section-label">02</p>
-            <h2 id="education-title">Education</h2>
-          </div>
-
-          <div class="education-item">
-            <div>
-              <h3>Drexel University</h3>
-              <p>B.S. Computer Science · Minor in Data Science and Financial Technology</p>
-            </div>
-            <div class="education-meta">
-              <strong>3.8 GPA</strong>
-              <span>Dean’s List</span>
-              <span>Expected June 2027</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="work" aria-labelledby="work-title">
-          <div class="section-heading">
-            <p class="section-label">03</p>
-            <h2 id="work-title">Selected work</h2>
-          </div>
-
+        <section id="projects" aria-labelledby="projects-title">
+          <h2 id="projects-title">Software projects</h2>
           <div class="work-list">
             <article class="work-item">
-              <div class="item-number">01</div>
-              <div class="item-content">
-                <div class="item-heading">
-                  <h3><a href="https://arxiv.org/abs/2606.22110v1" target="_blank" rel="noreferrer">TraceView: Interactive Visualization of Agentic Program Repair Trajectories <span aria-hidden="true">↗</span></a></h3>
-                  <p><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · arXiv preprint · Presented at IEEE International Conference on Software Maintenance and Evolution (ICSME) 2026</p>
-                </div>
-                <p>
-                  I owned end-to-end development of TraceView, building Python, Jupyter Notebook, and Streamlit tooling
-                  for trajectory annotation, graph-based visualization, filtering, metrics, and failure analysis. I also
-                  documented the system design and implementation for the paper’s methodology section.
-                </p>
-                <p class="item-tags">Python · Jupyter Notebook · Streamlit · Visualization</p>
-                <p class="item-links">
-                  <a href="https://github.com/SOAR-Lab/agent-traj-visualization" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
-                  <a href="https://youtu.be/9ZCh7Ifj2AQ" target="_blank" rel="noreferrer">Demo <span aria-hidden="true">↗</span></a>
-                </p>
-              </div>
-            </article>
-
-            <article class="work-item">
-              <div class="item-number">02</div>
-              <div class="item-content">
-                <div class="item-heading">
-                  <h3><a href="https://doi.org/10.1109/JCDL67857.2025.00033" target="_blank" rel="noreferrer">Linking Policies for the Permanent Web <span aria-hidden="true">↗</span></a></h3>
-                  <p>Drexel research · ACM/IEEE Joint Conference on Digital Libraries 2025</p>
-                </div>
-                <p>
-                  I built a simulation framework for InterPlanetary Archival Record Objects (IPAROs) in IPFS/IPNS and
-                  benchmarked 11 decentralized linking strategies. Data pipelines compared storage efficiency, retrieval
-                  time, and scalability across thousands of simulated versions; I presented the findings at JCDL 2025.
-                </p>
-                <p class="item-tags">Python · Bash · NumPy · Pandas · Matplotlib · IPFS / IPNS</p>
-              </div>
-            </article>
-
-            <article class="work-item">
-              <div class="item-number">03</div>
-              <div class="item-content">
-                <div class="item-heading">
-                  <h3><a href="https://arxiv.org/abs/2602.14345" target="_blank" rel="noreferrer">AXE: Grey-Box Exploitability Confirmation for Localized Vulnerability Reports <span aria-hidden="true">↗</span></a></h3>
-                  <p><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · Under review</p>
-                </div>
-                <p>
-                  I contributed to a multi-agent exploit engine for validating zero-day vulnerability reports and
-                  analyzing exploitability. I co-authored the paper, which is under review, and am contributing to a
-                  fourth manuscript in preparation.
-                </p>
-                <p class="item-tags">Security · Multi-agent systems · Vulnerability validation</p>
-              </div>
-            </article>
-
-            <article class="work-item">
-              <div class="item-number">04</div>
               <div class="item-content">
                 <div class="item-heading">
                   <h3>Super Streaming: Low-latency Pub/Sub System</h3>
@@ -228,18 +118,16 @@
                 <p class="item-tags">Rust · Tokio · MQTT · Multithreading</p>
               </div>
             </article>
-
-            <article class="work-item">
-              <div class="item-number">05</div>
+<article class="work-item">
               <div class="item-content">
                 <div class="item-heading">
                   <h3>iAgent: AI-Driven Project Assistance Tool</h3>
                   <p>SSI Securities Corporation · Internship project · April–June 2024</p>
                 </div>
                 <p>
-                  I built a full-stack application for AI-assisted project planning and document workflows, with a
-                  FastAPI backend, React frontend, PostgreSQL, and a PGVector store. Its RAG workflow uses OpenAI
-                  embeddings to generate project requirements, test cases, and market research outputs.
+                  I built iAgent to help with project planning and documents, using a FastAPI backend, React frontend,
+                  PostgreSQL, and PGVector. It uses OpenAI embeddings and retrieval-augmented generation (RAG) to
+                  generate project requirements, test cases, and market research.
                 </p>
                 <p class="item-tags">FastAPI · SQLAlchemy · React · PostgreSQL · PGVector · TailwindCSS · OAuth 2.0</p>
               </div>
@@ -247,12 +135,8 @@
           </div>
         </section>
 
-        <section class="section" id="experience" aria-labelledby="experience-title">
-          <div class="section-heading">
-            <p class="section-label">04</p>
-            <h2 id="experience-title">Experience</h2>
-          </div>
-
+        <section id="experience" aria-labelledby="experience-title">
+          <h2 id="experience-title">Experience</h2>
           <div class="experience-list">
             <article class="experience-item">
               <div class="experience-date">Oct 2025 — Present</div>
@@ -260,7 +144,7 @@
                 <h3>Undergraduate Research Assistant</h3>
                 <p class="experience-place"><a class="soar-link" href="https://soar-lab.github.io/" target="_blank" rel="noreferrer">Software Engineering and Analytics Research (SOAR) Lab</a> · Drexel University, School of Computer and Information Sciences</p>
                 <p>
-                  I develop research tools for agentic program repair trajectories and contribute to research on
+                  I build tools for studying program repair agents and contribute to research on
                   vulnerability validation, visualization, and software engineering analytics.
                 </p>
               </div>
@@ -283,10 +167,10 @@
               <div class="experience-date">Apr–Sep 2026<br /><span>Apr–Sep 2025</span></div>
               <div>
                 <h3>Junior Developer</h3>
-                <p class="experience-place">Drexel University IT · Core Enterprise Systems</p>
+                <p class="experience-place">Drexel University Information Technology · Core Enterprise Systems</p>
                 <p>
-                  I engineered features and microservices for the DrexelOne portal, integrating Microsoft SQL Server
-                  with Java, Spring Boot, and REST APIs. I also built responsive faculty-facing interfaces with jQuery,
+                  I built features and microservices for the DrexelOne portal using Microsoft SQL Server,
+                  Java, Spring Boot, and REST APIs. I also built responsive interfaces for faculty with jQuery,
                   Bootstrap, and Thymeleaf.
                 </p>
               </div>
@@ -296,11 +180,11 @@
               <div class="experience-date">Jul 2024 — Oct 2025</div>
               <div>
                 <h3>Undergraduate Research Assistant</h3>
-                <p class="experience-place">Drexel University, School of Computer and Information Sciences</p>
+                <p class="experience-place">Drexel University, School of Computer and Information Sciences · Supervised by <a class="soar-link" href="https://matkelly.com/" target="_blank" rel="noreferrer">Prof. Mat Kelly</a></p>
                 <p>
-                  I built simulation and visualization pipelines for InterPlanetary Archival Record Objects (IPAROs)
-                  in IPFS/IPNS, benchmarking 11 linking strategies and analyzing storage efficiency, retrieval time,
-                  and scalability. I presented the findings at the ACM/IEEE Joint Conference on Digital Libraries 2025.
+                  I built simulation and visualization tools for InterPlanetary Archival Record Objects (IPAROs)
+                  in IPFS/IPNS. I benchmarked 11 linking strategies and compared their storage efficiency, retrieval time,
+                  and scalability. I presented the results at the ACM/IEEE Joint Conference on Digital Libraries 2025.
                 </p>
               </div>
             </article>
@@ -311,22 +195,32 @@
                 <h3>Software Engineer Intern</h3>
                 <p class="experience-place">SSI Securities Corporation · Ho Chi Minh City, Vietnam</p>
                 <p>
-                  During my internship, I built Super Streaming for stock-data distribution and iAgent for AI-assisted
-                  project and document workflows. I also developed generative AI tools to support customer care and
-                  streamline operations, and worked with cross-functional teams to resolve issues in active projects
-                  using Gitflow.
+                  I built Super Streaming for stock data and iAgent for project planning and documents. I also built
+                  generative AI tools for customer care and internal workflows, and worked with other teams to fix
+                  issues in existing projects using Gitflow.
                 </p>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="section" id="skills" aria-labelledby="skills-title">
-          <div class="section-heading">
-            <p class="section-label">05</p>
-            <h2 id="skills-title">Skills</h2>
+        <section id="education" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <div class="education-item">
+            <div>
+              <h3>Drexel University</h3>
+              <p>B.S. Computer Science · Minor in Data Science and Financial Technology</p>
+            </div>
+            <div class="education-meta">
+              <strong>3.8 GPA</strong>
+              <span>Dean’s List</span>
+              <span>Expected June 2027</span>
+            </div>
           </div>
+        </section>
 
+        <section id="skills" aria-labelledby="skills-title">
+          <h2 id="skills-title">Skills</h2>
           <div class="skills-grid">
             <div>
               <h3>Languages</h3>
@@ -350,12 +244,12 @@
             </div>
           </div>
         </section>
-
-        <footer class="footer">
-          <span>© <span id="year"></span> Tu (John) Nguyen</span>
-          <a href="#top">Back to top ↑</a>
-        </footer>
       </main>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Tu (John) Nguyen · Philadelphia, PA</span>
+        <a href="#top">Back to top</a>
+      </footer>
     </div>
   </body>
 </html>
